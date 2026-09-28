@@ -9,19 +9,7 @@ This project showcases the full ML pipeline, from data preprocessing to deployme
 
 ## Demo
 
-**Live App:** Coming soon
-
-### Home Page — Trending Movies
-
-<img src="./docs/demo-01-home.png" alt="Cinematch Home - Trending Movies" width="800"/>
-
-### Movie Search
-
-<img src="./docs/demo-02-selected.png" alt="Cinematch - Movie Search" width="800"/>
-
-### Recommendations
-
-<img src="./docs/demo-03-recommendations.png" alt="Cinematch - Recommendations" width="800"/>
+![Cinematch Demo — full app walkthrough](./docs/demo.gif)
 
 ---
 
