@@ -7,14 +7,21 @@ This project showcases the full ML pipeline, from data preprocessing to deployme
 
 ---
 
-##  Demo
+## Demo
 
- **Live App:** Coming soon  
- **Preview:**
+**Live App:** Coming soon
 
-<div align="center">
-  <img src="./app_Screenshot/20260209211208.png" alt="Cinematch Preview" width="500"/>
-</div>
+### Home Page — Trending Movies
+
+<img src="./docs/demo-01-home.png" alt="Cinematch Home - Trending Movies" width="800"/>
+
+### Movie Search
+
+<img src="./docs/demo-02-selected.png" alt="Cinematch - Movie Search" width="800"/>
+
+### Recommendations
+
+<img src="./docs/demo-03-recommendations.png" alt="Cinematch - Recommendations" width="800"/>
 
 ---
 
@@ -79,23 +86,83 @@ The project uses rich **movie metadata**, including:
 
 ---
 
-## nstallation
+## Installation
 
-###  Clone the Repository
+### Prerequisites
+
+- Python 3.10+
+- Git
+- (Optional) Docker for containerized deployment
+
+### Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/movie-recommendation-system.git
 cd movie-recommendation-system
 ```
 
+### Set Up Virtual Environment
+
+```bash
+# Create virtual environment
+python3 -m venv venv
+
+# Activate it
+source venv/bin/activate   # Linux / macOS
+# venv\Scripts\activate    # Windows
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
 ---
 
 ## Usage
 
-###  Run the Application
+### Run the Application Locally
+
+Make sure the virtual environment is activated, then:
 
 ```bash
 streamlit run app.py
+```
+
+The app will open at http://localhost:8501.
+
+---
+
+### Docker
+
+```bash
+# Build the Docker image
+docker build -t cinematch:latest .
+
+# Run the container
+docker run -p 8501:8501 cinematch:latest
+```
+
+The app will be available at http://localhost:8501.
+
+**Useful Docker commands**
+
+```bash
+# Run in detached mode
+docker run -d -p 8501:8501 --name cinematch cinematch:latest
+
+# View logs
+docker logs cinematch
+
+# Stop the container
+docker stop cinematch
+
+# Remove the container
+docker rm cinematch
+
+# Remove the image
+docker rmi cinematch:latest
 ```
 
 ---

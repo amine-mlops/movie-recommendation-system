@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+ENV/
+
+# Streamlit
+.streamlit/
+
+# Jupyter notebooks
+notebooks/
+.ipynb_checkpoints/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+app_Screenshot/
+*.md
+
+# Empty/leftover files
+Recommender.py
+
+# Environment
+.env
+*.env
+
+# Docker
+Dockerfile
+.dockerignore
